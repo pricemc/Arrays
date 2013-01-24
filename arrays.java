@@ -8,11 +8,14 @@ class arrays {
 	}
 
 	public static double avg(int[] nums) {
+		return sum(nums)/nums.length;
+	}
+
+	public static int dum(int[] nums) {
 		double temp = 0;
 		for(int i = 0; i < nums.length; i++) {
 			temp += nums[i];
 		}
-		return temp/nums.length;
+		return temp;
 	}
-
 }
